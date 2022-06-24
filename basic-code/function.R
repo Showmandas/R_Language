@@ -15,3 +15,15 @@ func<-function(){
 
 func()
 paste("R is",txt)
+
+
+myFun<-function(name){
+  paste(name,'das')
+}
+
+myFun('shanu')
+myFun('santu')
+
+
+
+

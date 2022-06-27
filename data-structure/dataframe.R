@@ -45,3 +45,41 @@ df[1,]
 
 
 print("Hello R!!")
+
+
+#create new dataframe
+
+D_frame<-data.frame(
+  animal=c('cat','dog','cow'),
+  number=c(1,2,3),
+  color=c('red','green','blue')
+)
+D_frame
+
+
+#dataframe summary
+summary(D_frame)
+
+D_frame[1] #1st col
+D_frame[['animal']]
+D_frame$animal
+
+
+#add new row
+
+new_D_frame <- rbind(D_frame,c('fruits',3,3))
+new_D_frame
+#delete row
+del_row<-D_frame[-c(4),]
+del_row
+
+#add column
+new_col<-cbind(D_frame,fruits=c(1000,2,3))
+new_col
+#delete col
+del_col<-D_frame[,-c(4)]
+del_col
+
+#dimension
+
+dim(D_frame)
